@@ -85,8 +85,8 @@ natively. Either use Git Bash (installed alongside Git for Windows) or WSL
 to run the command above, or build it manually by running these two
 commands from PowerShell, from inside the repo folder:
 ```
-duckdb data\pokemon.duckdb < db\schema.sql
-Get-ChildItem db\seed\*.sql | ForEach-Object { duckdb data\pokemon.duckdb < $_.FullName }
+duckdb data\pokemon.duckdb -c ".read db/schema.sql"
+Get-ChildItem db\seed\*.sql | ForEach-Object { duckdb data\pokemon.duckdb -c ".read '$($_.FullName)'" }
 ```
 
 Either way, you should see a table of row counts printed at the end,
