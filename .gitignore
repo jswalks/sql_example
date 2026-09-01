@@ -1,0 +1,14 @@
+# Generated database files -- rebuild with ./db/build.sh, don't commit them.
+data/*.duckdb
+data/*.duckdb.wal
+data/*.db
+
+# Python virtual environments, if you make one to install duckdb.
+.venv/
+venv/
+__pycache__/
+
+# Editor/OS cruft
+.DS_Store
+.vscode/
+.idea/
