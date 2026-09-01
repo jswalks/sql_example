@@ -50,8 +50,7 @@ If you don't have `winget`, download the Windows zip from
 https://duckdb.org/docs/installation and unzip `duckdb.exe` somewhere on
 your `PATH`.
 
-DuckDB does NOT recognise git Bash, so you will need to install from windows
-option. Try git Bash or Power Shell!
+DuckDB's Windows install steps assume PowerShell/Windows Terminal (PATH updates may not apply to existing Git Bash sessions). Install via the Windows option above, then reopen your terminal (Git Bash or PowerShell) and run `duckdb --version`.
 
 ### Check it worked
 
