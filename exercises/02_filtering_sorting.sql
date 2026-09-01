@@ -20,37 +20,34 @@
 -- Task 3
 -- List all pokemon with a level of 30 or higher, sorted by level from
 -- highest to lowest.
--- Hint: ORDER BY <column> DESC sorts highest-first.
 
 
 
 -- Task 4
--- Find every species that is Fire type OR Water type (type1_id = 2 or 3).
--- Hint: look up "types" table first to see which id maps to which name,
--- or use IN (2, 3).
+-- Find every species that is Fire type OR Water type
+-- HINT: I'd check the type id first...
+
 
 
 
 -- Task 5
 -- Find every pokemon that does NOT have a nickname.
 -- Hint: a missing value in SQL is NULL, and NULL needs its own comparison:
--- "column IS NULL" (not "column = NULL", which never matches anything).
+-- (not "column = NULL", which never matches anything).
 
 
 
 -- Task 6
 -- Find every trainer who started between 2015 and 2018 (inclusive),
 -- sorted alphabetically by name.
--- Hint: look up "BETWEEN".
 
 
 
 -- Task 7
 -- Find every trainer whose name starts with the letter 'M'.
--- Hint: look up "LIKE" and the '%' wildcard, e.g. LIKE 'M%'.
+-- Hint: look up "LIKE" and wildcards
 
 
 
 -- Task 8
 -- List the 3 highest-level pokemon, showing nickname, species_id and level.
--- Hint: combine ORDER BY ... DESC with LIMIT.

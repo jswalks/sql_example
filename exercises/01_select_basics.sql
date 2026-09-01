@@ -38,7 +38,6 @@
 
 -- Task 4
 -- Show only the first 5 rows of the "moves" table.
--- Hint: the LIMIT clause goes at the end of the query.
 
 
 
@@ -52,4 +51,3 @@
 -- List every distinct (i.e. no duplicates) hometown that appears in
 -- "trainers". There are 12 trainers but only 6 hometowns -- your result
 -- should have 6 rows, not 12.
--- Hint: look up "SELECT DISTINCT".

@@ -4,6 +4,10 @@
 -- Goal: chain three or more tables together, and join a table to itself
 -- (useful whenever two rows in the same table relate to each other, like
 -- two trainers facing off in a battle).
+
+-- I have given you chains in some more complex joins below so you shaped
+-- less time working out the structure and more practicing joins!
+
 -- ============================================================================
 
 
@@ -25,19 +29,13 @@
 -- their ids) plus the battle_date and location. You need to join the
 -- "trainers" table into "battles" twice -- once for trainer1_id and once
 -- for trainer2_id -- so give each join a different alias.
--- Hint:
---   SELECT t1.name AS trainer1_name, t2.name AS trainer2_name,
---          b.battle_date, b.location
---   FROM battles b
---   JOIN trainers t1 ON b.trainer1_id = t1.trainer_id
---   JOIN trainers t2 ON b.trainer2_id = t2.trainer_id;
 
 
 
 -- Task 4
 -- Extend Task 3: also show the winner's name. Since winner_id can be NULL
--- (a draw), use a LEFT JOIN for that third trainers alias so draws still
--- show up (with a NULL/blank winner name) instead of disappearing.
+-- (a draw), make sure these still show up (with a NULL/blank winner name) instead of disappearing.
+-- (There are 2 draws for when you are testing!)
 
 
 
