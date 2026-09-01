@@ -8,7 +8,7 @@ learning SQL syntax rather than a business domain.
 This guide assumes you have never used a database before. Follow it
 top to bottom the first time.
 
-## What's actually going on here
+## Overview of this repository
 
 - **The database** is a single file, `data/pokemon.duckdb`. It is *not* a
   server you connect to over a network — it's just a file on your computer,
@@ -166,7 +166,6 @@ sql_example/
 │   ├── 03_joins.sql                intermediate: JOIN, LEFT JOIN
 │   ├── 04_aggregates_grouping.sql  intermediate: COUNT/AVG/SUM, GROUP BY, HAVING
 │   ├── 05_multi_table_joins.sql    intermediate: joining 3+ tables, self-joins
-│   ├── 06_subqueries.sql           intermediate: subqueries, correlated subqueries
 │   └── solutions/                  one worked answer per exercise file
 └── docs/
     └── schema.md              explains every table, what it's for, and how they connect
