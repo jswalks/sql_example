@@ -5,7 +5,7 @@
 -- (useful whenever two rows in the same table relate to each other, like
 -- two trainers facing off in a battle).
 
--- I have given you chains in some more complex joins below so you shaped
+-- I have given you chains in some more complex joins below so you spend
 -- less time working out the structure and more practicing joins!
 
 -- ============================================================================
