@@ -134,11 +134,18 @@ A few things worth knowing about this shell:
 - `.tables` lists every table. `.schema pokemon` shows how the `pokemon`
   table is defined.
 
-## 5. Run one of the provided SQL scripts
+## 5. YOUR TURN!
 
 The `exercises/` folder has `.sql` files with practice questions instead
 of pre-written answers — comments describe each task, and you write the
-query underneath. To load a whole file into the shell:
+query underneath. You can trial and error these directly in the interactive
+shell as you are developing.
+
+Work through the `exercises/` files in numeric order — each one builds on
+skills from the last. Read `docs/schema.md` first if you want to
+understand what the tables mean before you start querying them.
+
+To load and run the whole file from the shell :
 ```
 duckdb data/pokemon.duckdb -c ".read exercises/01_select_basics.sql"
 ```
@@ -150,6 +157,15 @@ Once you've attempted a file, compare against
 `exercises/solutions/<same filename>`, which has one correct answer for
 every task (there's often more than one correct way to write a query —
 if yours returns the same result, it's right, even if it looks different).
+
+Run solution for one like:
+```
+duckdb data/pokemon.duckdb -c ".read exercises/solutions/01_select_basics.sql"
+```
+Or from the interactive shell:
+```
+.read exercises/solutions/01_select_basics.sql
+```
 
 ## Repository layout
 
@@ -172,10 +188,6 @@ sql_example/
 └── docs/
     └── schema.md              explains every table, what it's for, and how they connect
 ```
-
-Work through the `exercises/` files in numeric order — each one builds on
-skills from the last. Read `docs/schema.md` first if you want to
-understand what the tables mean before you start querying them.
 
 ## Troubleshooting
 
